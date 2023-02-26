@@ -9,7 +9,7 @@ e per i multipli di 5 stampi “Buzz”. Per i numeri che sono
 let listEl = document.getElementById ("list");
 
 // Creo un ciclo
-for (let i = 1; i < 100; i++) {
+for (let i = 1; i < 101; i++) {
 
     // Creo un nuovo elemento
     let newLiElement = document.createElement("li");
