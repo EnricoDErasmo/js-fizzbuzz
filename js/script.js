@@ -15,6 +15,12 @@ for (let i = 1; i < 100; i++) {
     let newLiElement = document.createElement("li");
 
     newLiElement.style.listStyle = "none";
+    newLiElement.style.width = "calc(100% / 7 - 20px)";
+    newLiElement.style.padding = "40px 0";
+    newLiElement.style.fontWeight = "bold";
+    newLiElement.style.textAlign = "center";
+    newLiElement.style.border = "1px solid black";
+    newLiElement.style.backgroundColor = "#1389b2"
 
     // Faccio in modo che l'elemento creato venga inserito all'interno della ul
     listEl.append(newLiElement);
@@ -26,14 +32,17 @@ for (let i = 1; i < 100; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
 
         newLiElement.innerHTML = "FizzBuzz";
+        newLiElement.style.backgroundColor = "#f0466f"
 
     } else if (i % 5 == 0) {
 
         newLiElement.innerHTML = "Buzz";
+        newLiElement.style.backgroundColor = "#ffd166"
 
     } else if (i % 3 == 0) {
 
         newLiElement.innerHTML = "Fizz";
+        newLiElement.style.backgroundColor = "#0cd6a1"
     }
 }
 
